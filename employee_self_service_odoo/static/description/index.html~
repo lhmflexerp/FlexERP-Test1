@@ -1,0 +1,225 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+            <h2 class="oe_slogan" style="color:olive;"><b>Employee Self Service</b</h2>
+        <p class="oe_mt32" style="color:olive;">
+This module allow your employee to have self service in Odoo.
+        </p>
+        <p style="color:CRIMSON;">
+          Main Features:<br/>
+        </p>
+            <p style="color:olive;">
+                - Allowing Employee to edit own employee information<br/>
+                - Allowing Employee to work on his/her Timesheets<br/>
+                - Allowing Employee to encode/enter timesheet Activities<br/>
+                - Allowing Employee to make attendances<br/>
+                - Allowing Employee to create and manage own leave request<br/>
+                - Allowing Employee to create/manage own expenses<br/>
+                - Allowing Employee to send maintanance requests<br/>
+                - Allowing Employee to see Payslips<br/>
+                - Allowing Employee to see own contracts<br/>
+                - Allowing Employee to see own projects<br/>
+                - Allowing Employee to work on his/her Tasks<br/>
+        </p>
+        
+        <p style="color:CRIMSON;">
+          Menus:
+            <ul style="color:olive;">
+                <li>Self Service
+                    <ul>
+                        <li>Calendar</li>
+                        <li>Employee
+                            <ul>
+                                <li>Employee Details</li>
+                            </ul>
+                        </li>
+                        <li>Timesheet
+                            <ul>
+                                <li>My Timesheets</li>
+                                <li>Detailed Activities</li>
+                                <li>Attendences</li>
+                            </ul>
+                        </li>
+                        <li>Leave Request
+                            <ul>
+                                <li>Leaves Requests</li>
+                            </ul>
+                        </li>
+                        <li>Expenses
+                            <ul>
+                                <li>Expenses to Submit</li>
+                            </ul>
+                        </li>
+                        <li>Maintenance
+                            <ul>
+                                <li>Maintenance Requests</li>
+                            </ul>
+                        </li>
+                        <li>Payslip
+                            <ul>
+                                <li>Employee Payslip</li>
+                                <li>Contracts</li>
+                            </ul>
+                        </li>
+                        <li>Projects
+                            <ul>
+                                <li>Projects</li>
+                                <li>Tasks</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+             </ul>
+        </p>
+<p class="oe_mt32" style="color:olive;">
+Note: You can check detail screenshots below before buy and make sure it full fill your requirements. For support/configuration and adding new features you can contact us in future.
+            </p>
+            <p style="color:olive;">
+                Videos:<br/>
+                https://youtu.be/xBw7x3AC7Kg<br/>
+            </p>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Employee can Edit Own Employee Details</h2>
+            <h2 align="center" style="color:SpringGreen;">Login with Employee</h2>
+            <p class="oe_mt32" style="color:olive;" >
+                Allowed Edit/Update Own information.
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="1.png">
+                </div>
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="2.png">
+                </div>
+            </p>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Timesheet</h2>
+            <p class="oe_mt32">
+            Allowed employee to Create/Edit own Timesheets.
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="3.png">
+                </div>
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="4.png">
+                </div>
+            </p>
+            <p class="oe_mt32" style="color:olive;">
+                You can modify Start date end date from cart.<br/>
+            </p>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Attendences</h2>
+            <p class="oe_mt32" style="color:olive;"> 
+                Allowed Employee to do attendence.
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="5.png">
+                </div>
+            </p>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Leave Requests</h2>
+            <p class="oe_mt32" style="color:olive;"> 
+                Allowed Employee to send leave request.
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="6.png">
+                </div>
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="7.png">
+                </div>
+            </p>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Maintenance Request</h2>
+            <p class="oe_mt32" style="color:olive;">
+                Allowed Employee to create maintenance request.
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="8.png">
+                </div>
+            </p>
+            <p>
+                <div class="oe_demo oe_screenshot">
+                    <img src="9.png">
+                </div>
+            </p>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Timesheet Activities Enter Allow</h2>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Expenses Entery Allow</h2>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Expenses Entery Allow</h2>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Contract Allow</h2>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Payslips Allow</h2>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Payslips Allow</h2>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row">
+        <h2 class="oe_slogan" style="color:CRIMSON;">Self Payslips Allow</h2>
+    </div>
+</section>
+<section class="oe_container" >
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Contact / Support</h2>
+        <div class="oe_span6">
+            <div class="oe_picture" style="margin: 25px 10%;">
+                <a href="http://www.probuse.com/">
+                    <img src="logo.png">
+                </a>
+            </div>
+        </div>
+        <div class="oe_span6">
+            <p class="oe_mt32">
+                If you need any help or want more additional features,<br/> you may contact us through e-mail at <br/>
+                Email:<a href="mailto:contact@probuse.com" target="new">contact@probuse.com</a><br/>
+                Website:<a href="http://www.probuse.com" target="new">www.probuse.com</a><br/>
+                Skype: mustufa_probuse
+            </p>
+        </div>
+    </div>
+</section>

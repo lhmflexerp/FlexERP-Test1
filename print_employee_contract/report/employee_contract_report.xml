@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+         <!-- QWeb Reports -->
+        <report 
+            id="employee_contract_report_print"
+            model="hr.contract"
+            menu="True"
+            report_type="qweb-pdf"
+            string="Print Employee Contract"
+            name="print_employee_contract.employee_contract_report_id"
+            file="print_employee_contract.employee_contract_report_id"
+           />
+        
+        <template id="employee_contract_report_id">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                         <div class="page">
+                            <h4 class="text-center"><strong><span t-field="doc.name"/> - 
+                                <span t-if="doc.state in ['draft']"><span t-field="doc.state"/></span>
+                                <span t-if="doc.state in ['open']"><span t-field="doc.state"/></span>
+                                <span t-if="doc.state in ['close']"><span t-field="doc.state"/></span></strong> 
+                            </h4> <br/>
+                            <table class="table table-bordered" style="border: 2px solid black;">
+                               <tr>
+                                   <td><strong>Employee</strong></td><td> <span t-field="doc.employee_id.name"/></td>
+                                   <td><strong>Company</strong></td><td><span t-field="doc.company_id.name"/></td>
+                               </tr>
+                                <tr>
+                                    <td><strong>Department</strong></td><td><span t-field="doc.department_id.name"/></td>
+                                   <td><strong>Contract Type</strong></td><td><span t-field="doc.type_id.name"/></td>
+                                </tr>
+                                <tr>
+                                   <td><strong>Job Position</strong></td><td><span t-field="doc.job_id.name"/></td>
+                                   <!--<td><strong>Salary Structure</strong></td><td><span t-field="doc.struct_id.name"/></td>-->
+                                </tr>
+                            </table>
+                            <h4><strong>Monthly Advantages in Cash</strong></h4>
+                            <table class="table table-bordered" style="border: 2px solid black;">
+                               <tr>
+                                   <td><strong>Wage</strong></td><td> <span t-field="doc.wage" t-field-options='{"widget": "monetary", "display_currency": "doc.employee_id.company_id.currency_id"}'/> / month</td>
+                                   <!--<td><strong>Fuel Card</strong></td><td><span t-field="doc.fuel_card" t-field-options='{"widget": "monetary", "display_currency": "doc.employee_id.company_id.currency_id"}'/> / month</td>-->
+                               </tr>
+                            </table>
+                            <h4><strong>Contract Terms</strong></h4>
+                            <table class="table table-bordered" style="border: 2px solid black;">
+                               <tr>
+                                   <td><strong>Start Date</strong></td><td> <span t-field="doc.date_start"/></td>
+                                   <td><strong>End Date</strong></td><td><span t-field="doc.date_end"/></td>
+                               </tr>
+                               <tr>
+                                   <td><strong>End of Trial Period</strong></td><td> <span t-field="doc.trial_date_end"/></td>
+                                   <td><strong>Working Schedule</strong></td><td><span t-field="doc.resource_calendar_id.name"/></td>
+                               </tr>
+                            </table>
+                            <h4><strong>Notes</strong></h4>
+                            <table class="table table-bordered" style="border: 2px solid black;">
+                               <tr>
+                                   <td> <span t-field="doc.notes"/></td>
+                               </tr>
+                            </table>
+                            <div class="row">
+                             <div class="col-xs-6 text-left">
+                                <strong>Employee Signature:____________________</strong>
+                             </div>
+                             <div class="col-xs-6 text-right">
+                                <strong>Authorised Signature:____________________</strong>
+                             </div>
+                         </div>
+                         </div>
+                    </t>
+               </t>
+        </template>
+    </data>
+</openerp>

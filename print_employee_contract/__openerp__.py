@@ -9,18 +9,28 @@
     'currency': 'EUR',
     'category': 'Human Resources',
     'description': """
-                Employee Contract Report:
-                   - Print the contract report
-
+Employee Contract Report:
+Print the contract report
 print employee contract
 print hr contract
 print contract
+print employee contract
+contract employee
+employee agreement
+print employee agreement
+employee data
+contract print
+hr contract
+hr employee contract
+odoo employee contract
+contract details
 report contract
 report hr contract
             """,
     'summary' : 'Employee Contract Report - HR',
     'author' : 'Probuse Consulting Service Pvt. Ltd.',
     'website' : 'www.probuse.com',
+        'images': ['static/description/123.jpg'],
     'depends' : ['hr_contract'],
     'data' : [
             'report/employee_contract_report.xml'

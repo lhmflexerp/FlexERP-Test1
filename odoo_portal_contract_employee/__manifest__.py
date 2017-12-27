@@ -6,6 +6,13 @@
     'name': 'Employee Contract from Web-My Account using Portal User as Employee',
     'version': '1.0',
     'price': 49.0,
+    'depends': [
+                'hr_contract',
+                #'website_portal',
+                'website',
+                'portal',
+                'print_employee_contract',
+                ],
     'currency': 'EUR',
     'license': 'Other proprietary',
     'summary': """This module allow your portal employee to view and print employee contract from my account""",
@@ -107,13 +114,7 @@ For more details please watch Video or contact us before buy.​
     'images': ['static/description/img1.jpg'],
     'live_test_url' : 'https://youtu.be/x4-xbX8dLRM',
     'category' : 'Website',
-    'depends': [
-                'hr_contract',
-                #'website_portal',
-                'website',
-                'portal',
-                'print_employee_contract',
-                ],
+
     'data':[
         'security/contract_security.xml',
         'views/contract_template.xml',

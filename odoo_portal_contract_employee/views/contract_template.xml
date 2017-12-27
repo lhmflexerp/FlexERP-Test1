@@ -5,7 +5,7 @@
         <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
             <li t-if="page_name == 'contract' or contract">
                 <a t-if="contract" t-attf-href="/my/contracts?{{ keep_query() }}">Contracts</a>
-                <t t-else="">Contracts</t>
+                <t>Contracts</t>
             </li>
             <li t-if="contract">
                 <t t-esc="contract.name"/>
@@ -16,7 +16,7 @@
     <template id="portal_my_contract" name="Portal My Contract: project entries" inherit_id="portal.portal_my_home" priority="40">
         <xpath expr="//ul[hasclass('o_portal_docs')]" position="inside">
             <t t-if="request.env['res.users'].browse(request.session.uid).user_has_groups('odoo_portal_contract_employee.group_employee_contract')">
-                <li t-if="payslip_count" class="list-group-item">
+                <li t-if="contract_count" class="list-group-item">
                     <span class="badge" t-esc="contract_count"/>
                     <a href="/my/contracts">Contracts</a>
                 </li>

@@ -5,7 +5,7 @@
         <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
             <li t-if="page_name == 'contract' or contract">
                 <a t-if="contract" t-attf-href="/my/contracts?{{ keep_query() }}">Contracts</a>
-                <t t-else="">Contracts</t>
+                <t>Contracts</t>
             </li>
             <li t-if="contract">
                 <t t-esc="contract.name"/>

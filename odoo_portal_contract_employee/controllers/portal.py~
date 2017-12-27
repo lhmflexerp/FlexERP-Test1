@@ -9,15 +9,18 @@ from odoo.addons.portal.controllers.portal import get_records_pager, CustomerPor
 class CustomerPortal(CustomerPortal):
 
     def _prepare_portal_layout_values(self):
+        print("DDDDDDDDDDDDDDDDDDDDDDDDd")
         values = super(CustomerPortal, self)._prepare_portal_layout_values()
         employee = request.env['hr.employee'].sudo().search([('user_id', '=', request.env.user.id)])
         values.update({
-            'contract_count': request.env['hr.contract'].search_count([('employee_id', '=', employee.id)]),
+            'contract_count': request.env['hr.contract'].sudo().search_count([('employee_id', '=', employee.id)]),
         })
+        print("VAlllll",values)
         return values
         
     @http.route(['/my/contracts', '/my/contracts/page/<int:page>'], type='http', auth="user", website=True)
-    def portal_my_contracts(self, page=1, date_begin=None, date_end=None, sortby=None, **kw):
+    def portal_my_contracts(self, page=1, **kw):
+        print("DDDDDDDDDDDDDDDDDDDDDDDDwwwwwwwwwwwwwwd")
         if request.env['res.users'].browse(request.session.uid).user_has_groups('odoo_portal_contract_employee.group_employee_contract'):
             values = self._prepare_portal_layout_values()
             employee = request.env['hr.employee'].sudo().search([('user_id', '=', request.env.user.id)])

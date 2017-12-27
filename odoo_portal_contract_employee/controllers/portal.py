@@ -14,6 +14,7 @@ class CustomerPortal(CustomerPortal):
         values.update({
             'contract_count': request.env['hr.contract'].sudo().search_count([('employee_id', '=', employee.id)]),
         })
+        print("VAlllll",values)
         return values
         
     @http.route(['/my/contracts', '/my/contracts/page/<int:page>'], type='http', auth="user", website=True)

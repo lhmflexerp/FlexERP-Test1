@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 {
     'name' : 'Stock Back Date Valuation',
     'version' : '1.0',
@@ -7,7 +6,7 @@
     'currency': 'EUR',
     'category': 'Hidden',
     'license': 'Other proprietary',
-    'author': 'Alex Lyngsøe',
+    'author': 'Alex LyngsÃ¸e',
     'website': 'www.odoo.com',
     'description': """
 
